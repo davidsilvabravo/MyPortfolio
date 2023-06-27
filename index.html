@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - David Silva</title>
+    <link rel="shortcut icon" href="portfolio.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css"
+        integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="myPortfolioLnk" href="#top">My Portfolio !!</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" id="videoIntroductionLnk" href="#">Video Introduction</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="bioLnk" href="#bio">Bio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="projectsLnk">Projects</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#projects" id="week7">Week 7 - PacMen Exercise</a>
+                      <a class="dropdown-item" href="#eye" id="week8">Week 8 - Eye Exercise</a>
+                      <a class="dropdown-item" href="#bus" id="week9">Week 9 - Real Time Bus Tracker Exercise</a>
+                  </li>
+                  <li class="nav-item" id="github">
+                    <a target="_blank" rel="noopener" class="nav-link" href="https://github.com/davidsilvabravo">
+                      <i class="bi bi-github fa fa-github" style="font-size:60px;color:grey"></i><span class="d-lg-none ms-2">GitHub</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header> 
+
+    <main>
+      <section>
+        <h1 class="bs-component" id="video">Video Introduction</h1>
+        <div id = "videoDavid">
+          <iframe id="frameDavid"
+            height="400px"
+            src="https://www.youtube.com/embed/Yh818-CNODg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+          </iframe>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="bs-component" id="bio">Bio</h1>
+        <div class="container">
+          <div class="row" id="bioRow">
+            <div class="col p-bio" id="col1">
+              Hello my friend. My name is David Silva.<br>
+              I am a computer engineer by profession, and I have 13 years of work experience.
+              I decided to take the Professional Certificate in Programming: FullStack Development with MERN to continue my professional development.
+              I want to know more and more about technology and systems, and in this way take advantage of the opportunities that this can offer me.<br>
+              I really appreciate your visit to my portfolio, where you can see some of the projects I've been working on lately.
+              Here I leave some contact information in case you want to find me.<br>
+              <ul>
+                <li><div class="plomo">Github username: davidsilvabravo</div></li>
+                <li><div class="plomo">My linkedIn: https://www.linkedin.com/in/davidsilvabravo</div></li>
+                <li><div class="plomo">Email: davidsilvabravo@gmail.com (favorite contact method)</div></li>
+              </ul>
+            </div>
+            <div id="col2">
+              <img src="david.png" height="400px" >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="bs-component" id="projects">My Projects</h1>
+
+        <div class="card mb-3">
+          <h2 class="card-header-red">Pacmen Exercise</h2>
+          <div class="card-body-red">
+            <h3 class="card-title">Generate as many pacman as wanted and make them move on browser's window, just by clicking on "Add PacMan" and "Start Game" buttons !</h3>
+          </div>
+          <img src = "img_pacmen.png" alt="My Happy SVG"/>
+          <div class="card-body-red">
+            <a href="https://github.com/davidsilvabravo/PacMen-Exercise" class="nav-link">Github Repository link</a>
+            <a href="https://davidsilvabravo.github.io/PacMen-Exercise" class="nav-link">Try it live!</a>
+          </div>
+          <div class="card-footer text-muted" id="eye"></div>
+        </div>
+
+        <br><br>
+
+        <div class="card mb-3">
+          <h2 class="card-header-blue">Eye Exercise</h2>
+          <div class="card-body-blue">
+            <h3 class="card-title">A pair of green eyes following your movements on the browser's window. Just for fun, whenever you want to play with it !</h3>
+          </div>
+          <img src = "img_eye_exercise.png" alt="My Happy SVG"/>
+          <div class="card-body-blue">
+            <a href="https://github.com/davidsilvabravo/Eye-Exercise" class="nav-link">Github Repository link</a>
+            <a href="https://davidsilvabravo.github.io/Eye-Exercise" class="nav-link">Try it live!</a>
+          </div>
+          <div class="card-footer text-muted" id="bus"></div>
+        </div>
+
+        <br><br>
+
+        <div class="card mb-3">
+          <h2 class="card-header-brown">Real Time Bus Tracker</h2>
+          <div class="card-body-brown">
+            <h3 class="card-title">Follow the trajectory of the bus that runs along Massachusetts Avenue, from MIT to Harvard Hall !</h3>
+          </div>
+          <img src = "img_bus_tracker.png" alt="My Happy SVG"/>
+          <div class="card-body-brown">
+            <a href="https://github.com/davidsilvabravo/Real-Time-Bus-Tracker" class="nav-link">Github Repository link</a>
+            <a href="https://davidsilvabravo.github.io/Real-Time-Bus-Tracker" class="nav-link">Try it live!</a>
+          </div>
+          <div class="card-footer text-muted"></div>
+        </div>
+
+      </section>
+    </main>
+  
+    <footer id="footer">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Made by <a href="https://www.linkedin.com/in/davidsilvabravo">David Silva.</a> All rights reserved.</p>
+          <p>Code released under MIT License</a>.</p>
+          <p>Based on <a href="https://getbootstrap.com/" rel="nofollow">Bootstrap</a>. Icons from <a href="https://icons.getbootstrap.com/" rel="nofollow">Bootstrap Icons</a>. Web fonts from <a href="https://fonts.google.com/" rel="nofollow">Google</a>.</p>
+          <ul class="list-unstyled">
+            <li class="float-end"><a href="#top">Back to top</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous">
+    </script>
+
+</body>
+</html>
